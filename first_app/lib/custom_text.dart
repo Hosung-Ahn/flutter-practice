@@ -14,6 +14,14 @@ class CustomText extends StatelessWidget {
     super.key,
   });
 
+  const CustomText.h1({
+    required this.text,
+    this.size = 32,
+    this.color = Colors.black,
+    this.weight = FontWeight.bold,
+    super.key,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Text(

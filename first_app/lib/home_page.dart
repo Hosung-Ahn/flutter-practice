@@ -11,18 +11,13 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Welcome to Flutter'),
       ),
-      body: const CustomLinearGradient(
+      body: CustomLinearGradient(
         colors: [
           Colors.blue,
           Colors.red,
         ],
         child: Center(
-          child: CustomText(
-            text: 'Hello, World!',
-            size: 30,
-            color: Colors.white,
-            weight: FontWeight.bold,
-          ),
+          child: Image.asset('assets/images/dice-1.png', width: 200),
         ),
       ),
     );
