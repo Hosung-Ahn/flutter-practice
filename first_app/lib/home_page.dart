@@ -5,22 +5,29 @@ import 'custom_text.dart';
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
+  void rollDice() {
+    print('Roll Dice');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome to Flutter'),
-      ),
-      body: CustomLinearGradient(
-        colors: [
-          Colors.blue,
-          Colors.red,
-        ],
-        child: Center(
-          child: Image.asset('assets/images/dice-1.png', width: 200),
+        appBar: AppBar(
+          title: const Text('Welcome to Flutter'),
         ),
-      ),
-    );
+        body: CustomLinearGradient(
+          colors: [
+            Colors.blue,
+            Colors.red,
+          ],
+          child: Center(
+              child: Column(
+            children: [
+              Image.asset('assets/images/dice-1.png', width: 200),
+              TextButton(onPressed: rollDice, child: const Text('Roll Dice')),
+            ],
+          )),
+        ));
   }
 }
 
