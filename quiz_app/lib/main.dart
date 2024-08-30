@@ -51,11 +51,12 @@ class MyHomePage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.white)),
             const SizedBox(height: 30),
-            OutlinedButton(
+            OutlinedButton.icon(
                 onPressed: () {},
-                style: OutlinedButton.styleFrom(padding: const EdgeInsets.all(20)),
-                child:
-                    const Text("Start Quiz", style: TextStyle(fontSize: 20))),
+                icon: const Icon(Icons.play_arrow, size: 30),
+                label: const Text("Start Quiz", style: TextStyle(fontSize: 20)),
+                style: OutlinedButton.styleFrom(padding: const EdgeInsets.only(left: 20, right: 30, top: 15, bottom: 15)),
+            )
           ],
         )));
   }
